@@ -1,3 +1,5 @@
+const { default: driver } = require("appium-uiautomator2-driver/build/lib/driver");
+
 describe("Navigate",()=>{
     it("find element by Accesbility ID", async()=>{
        const appOption = await $('~App');
@@ -65,5 +67,6 @@ describe("Navigate",()=>{
         await expect($('~Secure Dialog')).toExist();
    })
 
-
+ 
+ 
 })
